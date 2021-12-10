@@ -50,7 +50,8 @@ kind: Service
 metadata:
   name: mysql-service # service_name
 spec:
-  type: ClusterIP
+  # type: ClusterIP
+  type: NodePort
   selector:
     app: mysql # must match pod_label_name of mysql-deploy
   ports:
