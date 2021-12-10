@@ -30,7 +30,8 @@ metadata:
 spec:
   selector:
     app: hr_system_app # must match pod_label_name of app-deploy
-  type: NodePort
+  # type: NodePort
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 80
