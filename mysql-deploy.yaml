@@ -42,7 +42,7 @@ spec:
       volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
-            claimName: mysql-persistent-volumeclaim # mysql-persistent-volumeclaim is name of  mysql-pvc.yaml
+            claimName: mysql-pv-claim # mysql-pv-claim is name of mysql-pv.yamល
 ---
 # Service
 apiVersion: v1
