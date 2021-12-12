@@ -38,6 +38,11 @@ RUN service apache2 restart
 # RUN cd /var/www/html && composer install
 
 WORKDIR /var/www/html
+CMD php artisan optimize
+CMD php artisan cache:clear
+CMD php artisan config:clear
+CMD php artisan route:clear
+CMD php artisan view:clear
 CMD php artisan serve --host=0.0.0.0 --port=80 
 # CMD php artisan migrate
 #RUN chown -R 777 www-data:www-data /var/www/html/
