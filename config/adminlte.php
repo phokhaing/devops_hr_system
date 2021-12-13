@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'HRMS',
+    'title' => 'HR-System',
 
     'title_prefix' => '',
 
@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>HRMS</b>',
+    'logo' => '<b>HR-System</b>',
 
-    'logo_mini' => '<b>HR</b>',
+    'logo_mini' => '<b>HR-System</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -118,13 +118,13 @@ return [
             'url' => '/dashboard'
         ],
         [
-            'text' => 'Personnel Entry',
+            'text' => 'Personnel',
             'route' => 'staff-personal-info.index',
             'can' => 'view_staff',
             'icon' => 'user'
         ],
         [
-            'text' => 'Contract Entry',
+            'text' => 'Contract',
             'route' => 'contract.index',
             'can' => 'view_contract',
             'icon' => 'book'
@@ -241,21 +241,21 @@ return [
             'can' => 'view_access_right',
             'submenu' => [
                 [
-                    'text' => 'User Entry',
+                    'text' => 'User',
                     'url' => 'users',
                     'icon_color' => 'aqua',
                     'icon' => 'user',
                     'can' => 'view_users',
                 ],
                 [
-                    'text' => 'Role Entry',
+                    'text' => 'Role',
                     'url' => 'roles',
                     'icon_color' => 'yellow',
                     'icon' => 'lock',
                     'can' => 'view_role',
                 ],
                 [
-                    'text' => 'Permission Entry',
+                    'text' => 'Permission',
                     'url' => 'permissions',
                     'icon_color' => 'red',
                     'icon' => 'key',
@@ -274,19 +274,19 @@ return [
             'can' => 'view_setting',
             'submenu' => [
                 [
-                    'text' => 'Position Entry',
+                    'text' => 'Position',
                     'url' => '/position',
                     'can' => 'view_position',
                     'icon' => 'briefcase'
                 ],
                 [
-                    'text' => 'Branch & Department Entry',
+                    'text' => 'Branch & Department',
                     'url' => '/branch-and-department',
                     'can' => 'view_branch_department',
                     'icon' => 'th-large'
                 ],
                 [
-                    'text' => 'Company Entry',
+                    'text' => 'Company',
                     'url' => '/company',
                     'can' => 'view_company',
                     'icon' => 'building'
