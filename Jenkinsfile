@@ -83,7 +83,6 @@ pipeline {
             channel: 'hr-system', 
             tokenCredentialId: 'slack_credential',
             color: 'good',
-            // message: 'Build Started: $JOB_NAME $BUILD_NUMBER (<BUILD_URL|Open>)'
             message: "Build Started: `${env.JOB_NAME}` #${env.BUILD_NUMBER}:\n${env.BUILD_URL}\nSatus: SUCCESS"
         }
         // triggered when red sign
