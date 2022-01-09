@@ -7,7 +7,8 @@ use Illuminate\Routing\Controller;
 class BaseApiController extends Controller
 {
 
-    const HINT_CODE = "G}h{m2Dw;FW9JxbM";
+//    const HINT_CODE = "G}h{m2Dw;FW9JxbM";
+    const HINT_CODE = "G}h{m2Dw;FW9Jabc";
 
     /**
      * Check request instead of Auth
