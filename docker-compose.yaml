@@ -5,7 +5,7 @@ services:
         image: phokhaing/hr_system_app:TAG_VERSION
         container_name: app
         ports:
-            - "80:80" # "local_port:default_image_port"
+            - "88:80" # "local_port:default_image_port"
         volumes:
             - .:/var/www/html/ #current_dir:default_image_dir
     #     links:
