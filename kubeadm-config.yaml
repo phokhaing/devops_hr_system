@@ -1,0 +1,9 @@
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+kubernetesVersion: stable
+# REPLACE with `loadbalancer` IP:Port
+controlPlaneEndpoint: "192.168.122.170:6443"
+networking:
+  podSubnet: 192.168.0.0/18 # Pods ip rank
+
+# Then run this file: kubeadm init --config=kubeadm-config.yaml
