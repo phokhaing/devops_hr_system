@@ -38,6 +38,7 @@ RUN service apache2 restart
 RUN cd /var/www/html && composer install
 
 WORKDIR /var/www/html
+CMD composer dump-autoload
 # CMD php artisan optimize
 # CMD php artisan cache:clear
 # CMD php artisan config:clear
