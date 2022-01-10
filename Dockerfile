@@ -34,7 +34,7 @@ RUN chown -R www-data:www-data /var/www/html && a2enmod rewrite
 
 #RUN a2enmod rewrite
 RUN service apache2 restart
-# RUN cd /var/www/html && composer install
+RUN cd /var/www/html && composer install
 
 WORKDIR /var/www/html
 # CMD php artisan optimize
